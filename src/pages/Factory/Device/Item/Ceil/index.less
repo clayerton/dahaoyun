@@ -1,0 +1,142 @@
+.ceil {
+  width: calc(25% - 22.5px);
+  height: 150px;
+  background-color: #ffffff;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+  .left {
+    width: 75px;
+    margin-right: 17px;
+    .img {
+      width: 61px;
+      height: 61px;
+      padding: 7px;
+      margin-bottom: 19px;
+      background-color: #ebeef3;
+      box-sizing: content-box;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .utilize {
+      line-height: 14px;
+      font-family: MicrosoftYaHei;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #c30000;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  .right {
+    // flex: 1;
+    width: calc(100% - 92px);
+    .infoTop {
+      display: flex;
+      justify-content: space-between;
+      height: 17px;
+      margin-bottom: 17px;
+      div {
+        width: calc(100% - 56px);
+        display: flex;
+      }
+      .name {
+        display: inline-block;
+        line-height: 17px;
+        height: 17px;
+        font-family: MicrosoftYaHei;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333333;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .type {
+        padding-left: 36px;
+        padding-right: 10px;
+        display: inline-block;
+        font-family: MicrosoftYaHei;
+        height: 13px;
+        line-height: 16px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #0072ff;
+        word-break:  keep-all;
+
+      }
+      .status {
+        margin-top: -5px;
+        display: inline-block;
+        width: 56px;
+        height: 24px;
+        background-color: #c30000;
+        border-radius: 12px;
+        line-height: 24px;
+        text-align: center;
+        font-family: MicrosoftYaHei;
+        font-size: 14px;
+        color: #ffffff;
+      }
+    }
+    .content {
+      height: 14px;
+      font-family: MicrosoftYaHei;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #333333;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      line-height: 14px;
+    }
+    .overflow {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .deviceName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15px;
+    margin-bottom: 18px;
+    span {
+      font-size: 14px;
+      color: #0072ff;
+    }
+  }
+  .status {
+    display: flex;
+    height: 14px;
+    align-items: center;
+    .colorStatus {
+      width: 12px;
+      height: 12px;
+      background-color: #0072ff;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    span {
+      font-size: 14px;
+      color: #333333;
+    }
+  }
+}

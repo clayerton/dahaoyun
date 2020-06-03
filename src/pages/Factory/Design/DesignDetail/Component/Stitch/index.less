@@ -1,0 +1,59 @@
+@color_0072ff: #0072ff;
+@color_333333: #333333;
+
+.stitchInfo {
+    padding: 0 186px;
+    padding-bottom: 31px;
+    span {
+        font-size: 14px;
+        color: @color_333333;
+        line-height: 40px;
+    }
+    .intro{
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid @color_0072ff;
+        span {
+            font-weight: bold;
+        }
+    }
+    .stitchText {
+        height: 45px;
+        border-bottom: 1px solid @color_0072ff;
+        padding: 2px 0;
+        .line {
+            height: 40px;
+        }
+       &:hover .line {
+           background-color: #cde3ff;
+       }
+    }
+    .intro , .line  {
+        display: flex;
+        align-items: center;
+        span:first-child {
+            width: 20%;
+            margin-left: 10%;
+            text-align: center;
+        }
+        span:nth-child(2) {
+            width: 30%;
+            text-align: center;
+        }
+        span:nth-child(3) {
+            width: 30%;
+            text-align: center;
+        }
+        .spanInput{
+            display: flex;
+            justify-content: flex-end;
+            input {
+                width: calc(50% + 15px);
+                border-color: #999;
+                color: #333333;
+            }
+        }
+       
+    }
+   
+}

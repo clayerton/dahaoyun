@@ -1,0 +1,162 @@
+@import '~antd/lib/style/themes/default.less';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+@new-layout-header-height: 50px;
+.header {
+  position: relative;
+  height: @new-layout-header-height;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+
+.logo {
+  display: inline-block;
+  height: @new-layout-header-height;
+  padding: 0 0 0 24px;
+  font-size: 20px;
+  line-height: @new-layout-header-height;
+  vertical-align: top;
+  cursor: pointer;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.menu {
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+  :global(.ant-dropdown-menu-item) {
+    min-width: 160px;
+  }
+ 
+}
+
+.trigger {
+  height: @new-layout-header-height;
+  padding: ~'calc((@{new-layout-header-height} - 20px) / 2)' 24px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s, padding 0s;
+  &:hover {
+    background: @pro-header-hover-bg;
+  }
+}
+
+.right {
+  float: right;
+  height: 100%;
+  margin-right: 30px;
+  overflow: hidden;
+  .action {
+    display: inline-block;
+    height: 100%;
+    padding: 0 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    > i {
+      color: @text-color;
+      vertical-align: middle;
+    }
+    &:hover {
+      background: @pro-header-hover-bg;
+    }
+    &:global(.opened) {
+      background: @pro-header-hover-bg;
+    }
+  }
+  .search {
+    padding: 0 12px;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .notice {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    img {
+      width: 40px;
+    }
+    span {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      text-align: center;
+      line-height: 16px;
+      font-size: 12px;
+      color: #fff;
+      background-color: #d51414;
+      border-radius: 50%;
+      right: -5px;
+      top: 13px;
+    }
+  }
+  .account {
+    .avatar {
+      margin: ~'calc((@{new-layout-header-height} - 24px) / 2)' 0;
+      margin-right: 8px;
+      color: @primary-color;
+      vertical-align: top;
+      background: rgba(255, 255, 255, 0.85);
+    }
+    .name {
+      font-family: MicrosoftYaHei;
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+}
+
+.dark {
+  height: @new-layout-header-height;
+  .action {
+    color: rgba(255, 255, 255, 0.85);
+    > i {
+      color: rgba(255, 255, 255, 0.85);
+    }
+    &:hover,
+    &:global(.opened) {
+      // background: @primary-color;
+      background: transparent;
+
+    }
+    :global(.ant-badge) {
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
+
+@media only screen and (max-width: @screen-md) {
+  .header {
+    :global(.ant-divider-vertical) {
+      vertical-align: unset;
+    }
+    .name {
+      display: none;
+    }
+    i.trigger {
+      padding: 22px 12px;
+    }
+    .logo {
+      position: relative;
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+    .right {
+      position: absolute;
+      top: 0;
+      right: 12px;
+      background: #fff;
+      .account {
+        height: 50px;
+        .avatar {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+@import '~antd/lib/style/themes/default.less';
+
+.main {
+  width: 388px;
+  margin: 0 auto;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+
+    .register {
+      float: left;
+    }
+  }
+}
+.content {
+  width: 970px;
+  height: 554px;
+  padding: 62px 81px 0;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin: 0 auto;
+  display: flex;
+  .left {
+    .loginTitle {
+      height: 51px;
+      line-height: 51px;
+      width: 434px;
+      // font-family: PingFangSC-Light;
+      font-size: 36px;
+      font-weight: 400;
+      color: #0072ff;
+      border-bottom: 1px solid #256cfe;
+      margin-bottom: 50px;
+    }
+    .loginLogo {
+      width: 293px;
+    	height: 312px;
+      margin-left: 29px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  .right {
+    margin-top: 102px;
+    .accountType {
+      margin-bottom: 80px;
+      span {
+        display: inline-block;
+        width: 210px;
+        height: 52px;
+        background-color: #256cfe;
+        border-radius: 10px;
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 52px;
+        color: #ffffff;
+        margin-right: 50px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+    .userInfo {
+      width: 368px;
+      height: 52px;
+      margin-bottom: 40px;
+      border-bottom: 2px solid #eee;
+      :global {
+        .ant-input {
+          border: 0;
+          font-size: 18px;
+          color: rgba(0, 0, 0, 0.65);
+          &::placeholder {
+            // 自定义样式
+            color: #999;
+          }
+        }
+        .ant-form-explain,
+        .ant-form-extra {
+          margin-top: 27px;
+          margin-left: 15px;
+        }
+        .ant-input:focus {
+          border: none;
+          box-shadow: none;
+        }
+        .ant-form-item-control {
+          line-height: 30px;
+        }
+        .ant-input-affix-wrapper .ant-input-prefix {
+          left: 10px;
+        }
+        .ant-input-affix-wrapper .ant-input:not(:first-child) {
+          padding-left: 56px;
+        }
+      }
+    }
+  }
+}
+.getMsg {
+  display: flex;
+  height: 45px;
+  :global {
+    .ant-input {
+      border: 0;
+      font-size: 18px;
+      margin-top: 4px;
+      color: rgba(0, 0, 0, 0.65);
+      &::placeholder {
+        // 自定义样式
+        color: #999999;
+      }
+    }
+    .ant-form-explain,
+    .ant-form-extra {
+      margin-top: 27px;
+      margin-left: 15px;
+    }
+    .ant-input:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+  .msg {
+    width: 290px;
+    height: 45px;
+    border: solid 1px #6196ff;
+  }
+  .msgButton {
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #6196ff;
+    margin-left: 20px;
+    font-family: PingFangSC-Light;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+}
+.forgetPass {
+  padding-top: 11px;
+  height: 25px;
+  text-align: right;
+  margin-bottom: 13px;
+  cursor: pointer;
+  a {
+    color: #0072ff;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+.onLogin {
+  width: 368px;
+  height: 50px;
+  background-color: #4f93fe;
+	border-radius: 25px;
+	border: solid 1px #1a72fe;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 30px;
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}

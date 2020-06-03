@@ -1,0 +1,64 @@
+@import '~antd/lib/style/themes/default.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  background: @layout-body-background;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 32px 0;
+  background-image: url('@/assets/background.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.contentTier {
+  width: 50%;
+}
+
+// .contentTierUser {
+//   width: 32%;
+// }
+
+.top {
+  text-align: center;
+}
+
+.header_title {
+  height: 44px;
+  line-height: 44px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  height: 44px;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.title {
+  position: relative;
+  top: 2px;
+  color: @heading-color;
+  // color: white;
+  font-weight: 600;
+  font-size: 33px;
+  font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: @screen-md-min) {
+  .content {
+    padding: 32px 0 24px 0;
+  }
+}

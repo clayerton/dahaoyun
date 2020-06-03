@@ -1,0 +1,72 @@
+.header {
+    height: 40px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      display: flex;
+      align-items: center;
+      .selectWorkShop {
+        font-family: MicrosoftYaHei;
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        color: #333333;
+        padding-right: 9px;
+      }
+      .select {
+        width: 210px;
+        height: 31px;
+        background-color: #ffffff;
+        :global {
+          .ant-select-arrow {
+            color: #666666;
+          }
+        }
+      }
+      :global {
+        .ant-cascader-picker {
+          width: 210px;
+        }
+        .ant-cascader-picker-arrow {
+          color: #666666;
+        }
+  
+        .ant-select-arrow {
+          color: #666666;
+        }
+        .ant-cascader-input.ant-input {
+          width: 210px;
+          height: 34px;
+          background-color: #ffffff;
+          border-radius: 4px;
+          &::placeholder {
+            color: #666666;
+          }
+        }
+      }
+    }
+    .right {
+      width: 100px;
+      height: 34px;
+      background-color: #389f4d;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: 20px;
+        height: 20px;
+        margin: 0 13px 0 10px;
+      }
+      span {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
+    }
+  }
+  

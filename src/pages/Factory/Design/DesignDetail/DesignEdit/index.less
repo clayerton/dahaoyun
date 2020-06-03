@@ -1,0 +1,183 @@
+.content {
+    padding: 28px 30px 44px;
+    background: #fff;
+}
+.baseContent {
+    padding: 0 186px;
+    padding-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    .baseText, .baseInfo {
+        height: 16px;
+        line-height: 16px;
+        color: #333333;
+        font-size: 16px;
+        margin-bottom: 53px;
+        display: flex;
+        align-items: center;
+    }
+    .baseInfo {
+        height: 38px;
+        line-height: 38px;
+        .select {
+            width: 400px;
+            height: 38px;
+        }
+        .input {
+            display: flex;
+            align-items: center;
+            .inputNumber {
+                width: 369px;
+                height: 38px;
+                line-height: 38px;
+                font-size: 16px;
+                border-color: #71b0ff;
+                border-radius: 10px;
+                color: #333;
+            }
+            .inputText {
+                width: 140px;
+                padding-left: 10px;
+            }
+        }
+        .stitch {
+            .stitchL {
+               width: 200px; 
+                height: 38px;
+                line-height: 38px;
+                font-size: 16px;
+                border-color: #71b0ff;
+                border-radius: 10px;
+                color: #333;
+            }
+            .stitchR {
+                width: 130px; 
+            }
+            .line {
+                padding: 0 18px 0 13px;
+                font-size: 16px;
+                color: #333;
+            }
+        }
+    }
+    .left {
+        :global {
+            .ant-form-item-label > label {
+                line-height: 16px;
+                font-size: 16px;
+                color: #333;
+            }
+            .ant-select-selection  {
+                border-color: #71b0ff;
+                border-radius: 10px;
+                height: 38px;
+                font-size: 16px;
+                color: #333;
+                line-height: 38px;
+            }
+            .ant-select-selection__rendered {
+                line-height: 38px;
+            }
+            .ant-form-item-label > label::after{
+                margin-right: 10px;
+            }
+            .ant-select-arrow .ant-select-arrow-icon {
+                color: #000;
+            }
+        }
+    }
+    .right {
+        margin-top: 28px;
+        width: 396px;
+        height: 396px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+.colors {
+    padding: 10px 186px 0 186px;
+    .header {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 28px;
+        .text {
+            font-size: 14px;
+            width: 50px;
+            color: #333333;
+            font-weight: bold;
+        }
+        .block {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: calc((100% - 650px)/14);
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .needle {
+        height: 55px;
+        border-bottom: 1px solid #71b0ff;
+        padding: 20px 40px 4px 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .line {
+            font-size: 14px;
+            color: #ff0000;
+            padding-right: 38px;
+            width: 127px;
+            padding-left: 31px;
+        }
+     
+        div {
+            width: 60px;
+            height: 30px;
+            border-radius: 6px;
+            font-size: 14px;
+            // color: #ffffff;
+            // padding: 0;
+            text-align: center;
+            line-height: 30px;
+            margin-right: calc((100% - 727px)/9);
+            &:last-child {
+                margin-right: 0;
+            }
+            span {
+                display: inline-block;
+                width: 60px;
+                height: 30px;
+                border-radius: 6px;
+                text-align: center;
+                line-height: 30px;
+                border: 1px solid #999999;
+
+            }
+        }
+        input[disabled],input:disabled,input.disabled{  
+            background-color: transparent;  
+            color: #fff;
+            -webkit-text-fill-color: #fff;  
+            -webkit-opacity:1;  
+            opacity: 1;
+            cursor: auto
+        }
+  
+        .itemSelect {
+            border: 1px solid red;
+        }
+    }
+}

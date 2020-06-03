@@ -1,0 +1,86 @@
+.antdTable {
+  :global {
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      padding: 0;
+      height: 66px;
+      border-color: #cfcfcf;
+      background-color: #fff;
+    }
+    .ant-table-thead > tr > th {
+      font-size: 14px;
+      background-color: #fff;
+      height: 45px;
+      border-top: 1px solid #cfcfcf;
+      color: #666666;
+    }
+    .ant-table-tbody > tr > td {
+      font-size: 16px;
+      color: #333333;
+    }
+    .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td,
+    .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td,
+    .ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td,
+    .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
+      background: #f6f6f6;
+    }
+    tr.ant-table-expanded-row td > .ant-table-wrapper {
+      margin: 0;
+    }
+
+    .ant-table-expand-icon-th,
+    .ant-table-row-expand-icon-cell {
+      display: none;
+    }
+    .ant-table-expanded-row {
+      > td:first-child {
+        display: none;
+      }
+    }
+    .ant-table-wrapper {
+      .ant-table-thead {
+        display: none;
+      }
+      .ant-table-placeholder {
+        margin-top: 0;
+        border: 0;
+      }
+      .ant-table-tbody > tr > td {
+        background-color: #d3e3ff;
+      }
+      .ant-table-tbody > tr:last-child {
+        td {
+          border: 0;
+        }
+      }
+    }
+  }
+}
+.search {
+  width: 300px;
+  height: 34px;
+  margin-left: 60px;
+  position: relative;
+  input {
+    width: 300px;
+    height: 34px;
+    background-color: #ffffff;
+    border-radius: 17px;
+    border: solid 1px #cfcfcf;
+    color: #333;
+    padding-left: 10px;
+    padding-right: 34px;
+    font-size: 14px;
+  }
+  input:focus {
+    border-radius: 17px;
+    outline: none;
+  }
+  img {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+  }
+}

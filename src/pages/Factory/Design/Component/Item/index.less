@@ -1,0 +1,109 @@
+.item {
+  width: calc((100% - 90px) / 4);
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+  .main {
+    display: flex;
+    height: 145px;
+    box-sizing: border-box;
+    padding: 20px 20px 0;
+  }
+  .left {
+    margin-right: 19px;
+    text-align:center;
+    .img {
+      width: 75px;
+      height: 75px;
+      // background-color: #ebeef3;
+      display:table-cell;
+      vertical-align:middle;
+      img {
+        max-width: 71px;
+        max-height: 64px;
+      }
+    }
+    span {
+      font-size: 16px;
+      color: #0072ff;
+      text-align: center;
+      margin-top: 18px;
+      line-height: 16px;
+      display: inline-block;
+    }
+  }
+  .right {
+    width: calc(100% - 94px);
+    .title {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: -4px;
+      margin-bottom: 15px;
+      .name {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333333;
+        width: calc(100% - 56px);
+        overflow:hidden; //超出的文本隐藏
+        text-overflow:ellipsis; //溢出用省略号显示
+        white-space:nowrap; //溢出不换行
+      }
+      .status {
+        width: 56px;
+        height: 24px;
+        background-color: #e77608;
+        border-radius: 12px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 24px;
+        font-size: 14px;
+      }
+    }
+    .item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 14px;
+      line-height: 14px;
+      font-family: MicrosoftYaHei;
+      font-size: 14px;
+      color: #333333;
+      margin-bottom: 18px;
+    }
+  }
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  span {
+    display: inline-block;
+    width: 179px;
+    width: calc(50% - 1px);
+    height: 35px;
+    background-color: #d0e5ff;
+    border-radius: 0px 0px 0px 5px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+    &:hover {
+      background-color: #0072ff;
+      color: #ffffff;
+    }
+  }
+  .detail {
+    border-radius: 0px 0px 5px 0px;
+  }
+}

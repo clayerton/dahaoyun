@@ -1,0 +1,184 @@
+@color_ffffff: #ffffff;
+@color_0072ff: #0072ff;
+@color_71b0ff: #71b0ff;
+@color_ffa200: #ffa200;
+@color_14ad0d: #14ad0d;
+@color_333333: #333333;
+@color_ff0000: #ff0000;
+.buttonType(@color) {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 6px;
+    color: @color;
+    border: 1px solid @color;
+    margin-top: -7px;
+    cursor: pointer;
+}
+.content {
+  padding: 28px 30px 44px;
+  background: #fff;
+}
+.textInfo {
+    height: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: @color_0072ff;
+}
+.button {
+    span {
+        .buttonType(@color_ffa200);
+    }
+    .edit {
+        background-color: @color_0072ff;
+        border: 1px solid @color_0072ff;
+        color: @color_ffffff;
+        margin-right: 50px;
+    } 
+}
+.back {
+    .buttonType(@color_14ad0d);
+    margin-right: 19px;
+}
+.info {
+    padding: 0 186px;
+    padding-bottom: 19px;
+    display: flex;
+    justify-content: space-between;
+    .left {
+        width: 699px;
+        padding-top: 42px;
+        .item {
+            display: flex;
+            margin-bottom: 34px;
+            span {
+                font-size: 16px;
+                color: @color_333333;
+                line-height: 16px;
+
+            }
+            .itemL {
+                width: 358px;
+                height: 16px;
+            }
+            .itemName {
+                display: flex;
+                align-items: center;
+                height: 16px;
+                .noEdit {
+                    padding-right: 27px;
+                    max-width: 223px;
+                    height: 21px;
+                    line-height: 21px;
+                    display: inline-block;
+                    overflow:hidden; //超出的文本隐藏
+                    text-overflow:ellipsis; //溢出用省略号显示
+                    white-space:nowrap; //溢出不换行
+                    word-wrap:break-word; 
+                    word-break:break-all;
+                }
+                input {
+                    width: 160px;
+                    height: 30px;
+                    margin-right: 19px;
+                    border-radius: 6px;
+                    border: solid 1px #999999;
+                }
+                .menu {
+                    width: 87px;
+                    display: flex;
+                    align-items: center;
+                }
+                .menu  img{
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 13px;
+                    cursor: pointer;
+                }
+                :global {
+                    .ant-select {
+                        width: 160px;
+                        border-color: #333;
+                        margin-right: 19px;
+                    }
+                }
+            }
+        }
+    }
+    .right {
+        margin-top: 28px;
+        width: 396px;
+        height: 396px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+    }
+}
+.colors {
+    padding: 10px 186px 0 186px;
+    .header {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 28px;
+        .text {
+            font-size: 14px;
+            width: 50px;
+            color: @color_333333;
+            font-weight: bold;
+        }
+        .block {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: calc((100% - 650px)/14);
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .needle {
+        height: 55px;
+        border-bottom: 1px solid @color_71b0ff;
+        padding: 20px 40px 4px 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .line {
+            font-size: 14px;
+            color: @color_ff0000;
+            padding-right: 38px;
+            width: 127px;
+            padding-left: 31px;
+        }
+        .item {
+            width: 60px;
+            height: 30px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: @color_ffffff;
+            text-align: center;
+            line-height: 30px;
+            margin-right: calc((100% - 727px)/9);
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+.titleText {
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #0072ff;
+}
+.header {
+    height: 47px;
+    margin-top: 22px;
+    margin-bottom: 23px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #daeaff;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .title {
+        .titleText();
+        top: 7px;
+
+    }
+    .date {
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 6px;
+        border: solid 1px #a0a0a0;
+        margin-right: 30px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #666666;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .dateSelect {
+        background-color: #0072ff;
+        border: transparent;
+
+        color: #fff;
+    }
+}
+.statistics {
+    margin-top: 62px;
+    margin-bottom: 72px;
+    height: 48px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding-bottom: 30;
+    border-bottom: 1px solid #daeaff;
+
+    .title {
+        .titleText();
+    }
+    .date {
+        height: 18px;
+        line-height: 18px;
+    }
+}
+.eChart {
+    display: flex;
+    justify-content: space-between;
+   .pie {
+        width: 360px;
+        height: 360px;
+        margin-left: 83px ;
+        position: relative;
+        .titleCenter {
+            position: absolute;
+            top: 150px;
+            width: 360px;
+            text-align: center;
+            .statusTime {
+                color:#333;
+                font-size:24px;
+                height: 24px;
+                line-height: 24px;
+            }
+            .statusContent {
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                align-items: center;
+                span:first-child {
+                    display:inline-block;
+                    width: 12px;
+                    height: 12px;
+                    background-color: #1a9805;
+                    border-radius: 50%;
+                    margin-right: 10px
+                }
+                span:last-child {
+                    color:#1a9805;
+                    font-weight: bold;
+                    font-size:24px
+                }
+            }
+        }
+   }
+   .status {
+       width: 860px;
+       margin-right: 132px;
+       .reason {
+            height: 50px;
+            margin-bottom: 1px;
+            display: flex;
+            align-items: center;
+            div {
+                width: 215px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .select {
+                height: 50px;
+                line-height: 50px;
+            }
+       }
+       .list {
+           border: 1px solid #1a9805;
+           width: 860px;
+           span {
+                width: 33%; 
+                display: inline-block;
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+                color: #333333;
+                overflow:hidden; //超出的文本隐藏
+                text-overflow:ellipsis; //溢出用省略号显示
+                white-space:nowrap; //溢出不换行
+            }
+           .listHeader {
+                width: 860px;
+                height: 40px;
+                background-color: #1a9805;
+                span {
+                    font-weight: bold;
+                    color: #ffffff;
+                }
+            }
+            .listBody {
+                min-height: 290px;
+                .bodyHeader {
+                    border-bottom: 1px solid #b4daad;
+                    span {
+                        font-weight: bold;
+                        color: #333333;
+                    }
+                }
+            }
+            .content {
+                border-bottom: 1px solid #b4daad;
+            }
+        }
+   }
+}

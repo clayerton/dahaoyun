@@ -1,0 +1,65 @@
+.antdTable {
+  :global {
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      height: 66px;
+      padding: 0;
+      background-color: #fff;
+      border-color: #cfcfcf;
+    }
+    .ant-table-thead > tr > th {
+      font-size: 14px;
+      height: 45px;
+      background-color: #fff;
+      border-top: 1px solid #cfcfcf;
+      color: #666666;
+    }
+    .ant-table-tbody > tr > td {
+      font-size: 16px;
+      color: #333333;
+    }
+    .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td,
+    .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td,
+    .ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td,
+    .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
+      background: #f6f6f6;
+    }
+  }
+}
+.progressAll {
+  display: flex;
+  align-items: center;
+  padding-left: 15%;
+}
+.progress {
+  width: 140px;
+  height: 8px;
+  margin-right: 16px;
+  background-color: #cecece;
+  border-radius: 4px;
+  position: relative;
+  > div {
+    height: 8px;
+    background-color: #cecece;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+  }
+}
+.product {
+  display: flex;
+  align-items: center;
+  .img {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 13px;
+    margin-left: 50px;
+  }
+  img {
+    max-width: 38px;
+    max-height: 38px;
+  }
+}
